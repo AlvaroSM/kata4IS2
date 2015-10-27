@@ -1,7 +1,5 @@
 package katafiles;
 
-import jdk.internal.util.xml.impl.Input;
-
 import java.io.*;
 
 public class FileCopy {
