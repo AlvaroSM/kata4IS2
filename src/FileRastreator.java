@@ -1,6 +1,6 @@
 import java.io.File;
 
-public class Kata4V1 {
+public class FileRastreator  {
     public static void main(String[] args) {
         File file = new File("C:\\Users\\alvar_000\\Desktop");
         String [] names = file.list();
