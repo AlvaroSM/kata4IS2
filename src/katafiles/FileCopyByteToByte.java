@@ -1,8 +1,8 @@
-import jdk.internal.util.xml.impl.Input;
+package katafiles;
 
 import java.io.*;
 
-public class FileCopy {
+public class FileCopyByteToByte {
     public static void main(String[] args) throws IOException {
         String from = "C:\\Users\\alvar_000\\Desktop\\Escribo para desahogarme.docx";
         String to = "C:\\Users\\alvar_000\\Desktop\\Copia.docx";
@@ -16,8 +16,9 @@ public class FileCopy {
     }
 
     private static void copy(InputStream input, OutputStream output) throws IOException {
+        byte[] buffer = new byte[1024];
         while (true){
-            int read = input.read();
+            int read = input.read(buffer);
             if (read < 0) break;
             output.write(read);
         }

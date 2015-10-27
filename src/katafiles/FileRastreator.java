@@ -1,3 +1,5 @@
+package katafiles;
+
 import java.io.File;
 
 public class FileRastreator  {
